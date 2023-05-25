@@ -1,0 +1,71 @@
+using System;
+using static System.Console;
+
+
+Usuario a  = new Usuario();
+Cliente b  = new Cliente();
+English eng = new English();
+int []vetor = new int[10];
+Portuguese port = new Portuguese();
+Language lang = new Portuguese();
+lang.TraduzirMenu();
+eng.TraduzirMenu();
+port.TraduzirMenu();
+
+
+object obj = new Cliente();
+
+
+
+public class Usuario 
+{
+    public int Value {get;set;} = 3;
+    public virtual void createValue()
+    {
+        Value = 0;
+    }
+}
+
+public class Cliente : Usuario
+{
+    public int OtherValue {get;set;} = 2;
+}
+
+public class Adminsitrador: Usuario
+{
+public string Nome {get;set;} = "Queila";
+public override void createValue()
+{
+    if (Value != 0)
+    {
+        Value = 99;
+    }
+
+}
+
+
+}
+
+public abstract class Language
+{
+    public abstract void TraduzirMenu();
+    
+
+
+}
+
+public class English : Language
+{
+    public override void TraduzirMenu()
+    {
+        WriteLine("New Game");
+    }
+}
+
+public class Portuguese : Language
+{
+    public override void TraduzirMenu()
+    {
+        WriteLine("Novo Jogo");
+    }
+}

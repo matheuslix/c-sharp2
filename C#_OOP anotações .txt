@@ -1,0 +1,13 @@
+Encapsulamento: Restrição de acesso de atributos,métodos, informações dentro de uma classe.
+private - Permite o acesso a variável ou metodo apenas dentro da classe que foi criada.
+public  - Permite o acesso as informações dentro de qualquer classe.
+protected - Permite o acesso as informações dentro da classe que foi criada e de classes que herdaram a classe em que foi criada.
+
+get - Recebe Informaçao de um atributo
+set - Envia informação ao atributo
+Usados para Receber e Enviar informações aos atributos que são private.
+
+Herança - Uma classe pode receber atributos e métodos de uma outra classe ja existente desde que os mesmos não estejam com o modificador de acesso 'private'
+
+Polimorfismo - Diferentes classes herdam uma classe origem em comum, porém os métodos dentro da origem podem ser modificados para atender as caracteristicas
+da classe filho

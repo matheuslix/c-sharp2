@@ -1,0 +1,17 @@
+Orientação a objetos basica
+
+
+
+public string Nome {get; set}; #1
+
+
+public string nome; #2
+public string Nome
+{
+    get{                                        get => nome;
+        return nome;
+    }
+    set{                                        set => nome=value;
+        nome = value ou 
+    }
+}
